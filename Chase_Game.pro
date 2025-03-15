@@ -9,12 +9,28 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    GameHandler/ChessBoard.cpp \
+    GameHandler/ChessPiece.cpp \
+    GameHandler/PieceClasses/Bishop.cpp \
+    GameHandler/PieceClasses/King.cpp \
+    GameHandler/PieceClasses/Knight.cpp \
+    GameHandler/PieceClasses/Pawn.cpp \
+    GameHandler/PieceClasses/Queen.cpp \
+    GameHandler/PieceClasses/Rook.cpp \
     UiHandler/MainWindow.cpp \
     main.cpp
 
 
 HEADERS += \
+    GameHandler/ChessBoard.h \
+    GameHandler/ChessPiece.h \
     GameHandler/GameDefinitions.h \
+    GameHandler/PieceClasses/Bishop.h \
+    GameHandler/PieceClasses/King.h \
+    GameHandler/PieceClasses/Knight.h \
+    GameHandler/PieceClasses/Pawn.h \
+    GameHandler/PieceClasses/Queen.h \
+    GameHandler/PieceClasses/Rook.h \
     UiHandler/MainWindow.h
 
 
